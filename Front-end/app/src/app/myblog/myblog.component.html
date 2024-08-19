@@ -1,0 +1,16 @@
+<div class="container">
+    @for(blog of user_blog;track blog){
+    <div class="card" (click)="getView(blog._id)">
+        <img src="{{blog.image}}" alt="">
+       
+        <h3>{{blog.title}}</h3>
+        <p>{{blog.description}}...<a>Read more</a></p>
+    </div>
+   
+    }
+   
+   
+</div>
+<div class="btn">
+    <a href="/create">create a new blog</a>
+</div>

@@ -1,0 +1,66 @@
+.container{
+    height: 100%;
+   
+    text-align: center;
+    background: blanchedalmond;
+}
+
+.card{
+    display: grid;
+   gap: 50px;
+padding-top: 150px;
+}
+.title{
+    margin-top: 40px;
+}
+.title input{
+    padding-left: 10px;
+    line-height: 30px;
+    width: 500px;
+    border: solid;
+}
+.image input{
+    padding-left: 10px;
+    line-height: 30px;
+    width: 500px;
+    border: solid;
+}
+.description textarea{
+    padding-left: 10px;
+    line-height: 30px;
+    width: 500px;
+    border: solid;
+    margin-top: 50px;
+   
+}
+.image{
+    margin-top: 40px;
+}
+.description{
+display: flex;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+    margin-left: 455px;
+}
+
+.description span{
+    margin-top: 40px;
+}
+button{
+    padding: 10px;
+    width: 150px;
+    border-radius: 15px;
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: 600;
+}
+label{
+    font-size: 20px;
+}
+span{
+    font-size: 20px;
+}
+button:hover{
+    background: aqua;
+}

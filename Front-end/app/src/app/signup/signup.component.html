@@ -1,0 +1,26 @@
+<div class="card">
+    <form action="" [formGroup]="sform" (ngSubmit)="sformget(sform)">
+      <br>
+      <h1>signup</h1>
+      <br><br>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Name
+        </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" class="form-control"  aria-describedby="emailHelp"
+          placeholder="Enter Name" name="name" formControlName="name" id="name" required>
+  
+      </div><br>
+      <div class="form-group" >
+        <label for="exampleInputEmail1">Email address</label>&nbsp;&nbsp;&nbsp;
+        <input type="email" formControlName="email" class="form-control" id="email" aria-describedby="emailHelp"
+          placeholder="Enter email" name="email">
+      </div><br>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" formControlName=password class="form-control" id="password" placeholder="Password"
+          name="password">
+      </div><br>
+      <button type="submit"  class="btn btn-primary">signup</button>
+       
+    </form>
+  </div>

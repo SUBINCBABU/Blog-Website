@@ -1,0 +1,103 @@
+.card{
+    align-items: center;
+    background-color: rgb(210, 231, 224);
+    height: 100%;
+    /* width: 1450px; */
+    width: 100%;
+    padding-top: 20px;
+  
+   /* margin-left: 30px;
+   margin-top: 30px; */
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 90vh;
+}
+img{
+    
+    height: 270px;
+    width: 50%;
+    padding-top: 10px;
+    border-radius: 20px;
+    /* box-shadow: 5px 5px 5px black; */
+    overflow: hidden;
+}
+.like-comment{
+    display: flex;
+    gap: 20px;
+    padding-left: 30%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.fa-solid{
+    background: rgb(210, 231, 224);
+    color: red;
+   
+}
+
+
+.comment{
+    
+    height:100%;
+    width: 90%;
+ margin-left: 80px;
+    /* background-color:rgb(247, 245, 245); */
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 10px;
+   
+
+    
+}
+.description{
+    padding-bottom:30px ;
+
+}
+.commentbox{
+    display: flex;
+    gap: 10px;
+}
+.comment-user{
+    font-size: 20px;
+    padding-right: 1060px;
+    padding-top: 20px;
+}
+.comment-box{
+    border-left-style:solid;
+    margin-left: 150px;
+    margin-top: 55px;
+    margin-bottom: 35px;
+
+}
+.comment-text{
+    font-size: 20px;
+   text-align: left;
+    padding-top: 20px;
+    padding-left: 70px;
+
+}
+.replay-box{
+    border-left-style:dotted;
+    margin-left: 50px;
+    margin-top: 55px;
+    margin-bottom: 35px;
+
+}
+
+.replay-user{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+.replay-text{
+    font-size: 20px;
+   text-align: left;
+    padding-top: 20px;
+    padding-left:25px;
+
+}
+.replay h3{
+    margin-left: 50px;
+    margin-top: 50px;
+}

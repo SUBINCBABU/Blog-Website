@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="card">
+    <form action="" [formGroup]="bform" (ngSubmit)="bformget(bform)">
+
+
+      <div class="title">
+        <label>Blog Title :
+        </label>
+        <input type="text" class="form-control" formControlName="title" id="title" aria-describedby="emailHelp"
+          placeholder="Title" name="title" required>
+
+      </div>
+
+      <div class="image">
+        <label>Image Link :</label>
+        <input type="text" formControlName="image" class="form-control" id="image" aria-describedby="emailHelp"
+          placeholder="image link" name="image">
+
+      </div>
+
+      <div class="description">
+        <span>Description :</span>
+        <textarea type="text" formControlName="description" class="form-control" id="description"
+          placeholder="description" name="description">
+        </textarea>
+      </div>
+
+
+      <button type="submit" class="btn btn-primary">Create</button>
+
+    </form>
+  </div>
+
+</div>

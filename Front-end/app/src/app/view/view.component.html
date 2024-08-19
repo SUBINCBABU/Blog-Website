@@ -1,0 +1,99 @@
+<div class="container">
+
+    <div class="card">
+        <img src="{{selected_blog.image}}" alt=""><br>
+        <div class="like-comment">
+            <div class="like">
+                <p (click)="addLike(selected_blog._id)">
+                    @if(liked){
+                    <i class='bx bxs-like'></i>
+                    }
+                    @else{<i class='bx bx-like'></i>}{{like_length}}
+                </p>
+                <!-- <button (click)="liked(selected_blog._id)"><i class="fa-solid fa-heart"></i></button> -->
+
+            </div>
+
+            <p (click)=openCommentBox()><i class="fa-regular fa-comment"></i></p>
+
+
+        </div>
+
+
+
+
+        <h3>{{selected_blog.title}}</h3>
+        <p class="description">{{selected_blog.description}}</p>
+        <div [hidden]="isShowComment" class="comment">
+
+            <div style="text-align: left; margin-top: 20px;margin-left: 10px; margin-bottom: 30px;">
+                <h3>comment</h3>
+                <div class="commentbox">
+                    <input type="text" style="height: 30px; width: 500px; margin-left: 23px;" placeholder="comment...."
+                        name="comment" id="comment" [(ngModel)]="comment">
+                    <button (click)="addComment(selected_blog._id)"
+                        style="font-size: 20px; background-color: transparent; border: none;">
+                        <i class='bx bxs-send'></i>
+                    </button>
+                </div>
+
+
+
+            </div>
+
+
+            @for(comment of selected_blog.comments;track comment;let ci=$index){
+
+            <div class="comment-box">
+                <p class="comment-user"> <i class='bx bxs-user-circle' id="user"></i>{{comment.comment_user.name}}</p>
+                <p class="comment-text"><b>{{comment.comment}}</b></p>
+
+
+                <div style="text-align: left; margin-top: 20px;margin-left: 150px;" class="replay">
+                    <h3 >Replay {{comment.comment_user.name}}</h3>
+                    <div class="replay-box">
+                        <input  type="text"
+                            style="height: 30px; width: 500px;padding-top: 10px; margin-left: 23px;"
+                            placeholder="Replay...." name="replay" #replay>
+                        <button  (click)="addReplay(selected_blog.comments[ci]._id,replay.value)"
+                            type="submit" style="font-size: 20px; background-color: transparent; border: none;">
+                            <i class='bx bxs-send'></i>
+                        </button>
+                        @for(replay of selected_blog.comments[ci].replays;track replay;let ri=$index){
+
+                            <p class="replay-user"> <i class='bx bxs-user-circle' id="user"></i>{{replay.replay_user.name}}</p>
+                            <p class="replay-text"><b>{{replay.replay}}</b></p>
+            
+
+                        }
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>

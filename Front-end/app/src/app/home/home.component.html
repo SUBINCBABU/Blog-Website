@@ -1,0 +1,21 @@
+<img src="https://assets.traveltriangle.com/blog/wp-content/themes/harmony/img/search_banner.png?var=29062018" alt="">
+<div class="card">
+    <h1><b>KERALA</b></h1>
+
+        <div class="container">
+            @for(blog of user_blog;track blog){
+                
+                <div class="card1" (click)="getView(blog._id)">
+                    <img class="image" src="{{blog.image}}" alt="">
+                    <!-- <button><i class='bx bx-like bx-md'></i></button>
+                    <button><i class='bx bx-comment bx-md'></i></button> -->
+                    <h3>{{blog.title}}</h3>
+                    <p>{{blog.description}}<a>...Read more</a></p>
+                </div>
+                
+            }
+        </div>
+
+    
+
+</div>
